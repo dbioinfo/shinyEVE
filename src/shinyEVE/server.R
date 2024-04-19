@@ -5,19 +5,19 @@ server <- shinyServer(function(input, output, session) {
   
   #generate logo
   output$logo <- renderImage({
-    list(src = '/home/dylan/Postdoc/Hindle/broad/data/dna_tree_of_life.jpg', height = 50, width=70)
+    list(src = 'data/dna_tree_of_life.jpg', height = 50, width=70)
     
   }, deleteFile = F)
   
   #import preprocessed data
   #master_tbl <<- read_csv('/home/dylan/Postdoc/Hindle/broad/data/cleaned_EVE_data.csv')
-  thetas <<- read_csv('/home/dylan/Postdoc/Hindle/broad/data/shinyEveData/cleaned_EVE_thetas.csv')
-  exprs <<- read_csv('/home/dylan/Postdoc/Hindle/broad/data/shinyEveData/cleaned_EVE_expr.csv')
-  lfc <<- read_csv('/home/dylan/Postdoc/Hindle/broad/data/shinyEveData/cleaned_EVE_lfc.csv')
+  thetas <<- read_csv('data/shinyEveData/cleaned_EVE_thetas.csv')
+  exprs <<- read_csv('data/shinyEveData/cleaned_EVE_expr.csv')
+  lfc <<- read_csv('data/shinyEveData/cleaned_EVE_lfc.csv')
   
   gname_trans <<- thetas %>% select(gene, clean_gname) %>% unique()
   
-  tree <- read.tree('/home/dylan/Postdoc/Hindle/broad/data/shinyEveData/9_species-list.nwk')
+  tree <- read.tree('data/shinyEveData/9_species-list.nwk')
   
   
   #populate gene_select list
