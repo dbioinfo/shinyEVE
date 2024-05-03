@@ -13,3 +13,5 @@ In order to get this working in its current form, make sure you have all the pac
 Beginning in the same directory the repo is cloned to, use an R terminal by typing R on the command line
 
 Then run shiny::runApp('src/shinyEVE') which should open a window with your default browser showing the shiny app
+
+The app is still early in development, so give it a minute to start up. You'll know the app is loaded when the list of genes appears on the top row. 
