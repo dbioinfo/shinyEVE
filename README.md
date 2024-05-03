@@ -16,4 +16,4 @@ Then run shiny::runApp('src/shinyEVE') which should open a window with your defa
 
 The app is still early in development, so give it a minute to start up. You'll know the app is loaded when the list of genes appears on the top row.
 
-![plot](./images/test_image.png')]
+![plot](/images/test_image.png')
