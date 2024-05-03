@@ -5,7 +5,7 @@ A shiny app for the Broad Institute group to vizualize EVE phylogenetic expressi
 ## installation notes
 First git clone git@github.com:dylan-unlv/shinyEVE.git
 
-Then download the zipped data and store them in the same directory under the directory data
+Then unzip the data in the cloned directory, data.tar.gz
 
 In order to get this working in its current form, make sure you have all the packages in src/necessary_packages.R installed into your R environment.
 
